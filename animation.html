@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            position: relative;
+            letter-spacing: 3px;
+            line-height: 30px;
+            margin: 20px 20px 20px 20px;
+            animation-name: myanimation;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes myanimation {
+         from{
+            background-color:crimson;
+            top: 0px;
+            left: 0px;
+         }
+         to{
+            background-color: royalblue;
+            top: 100px;
+            left: 100px;
+         }
+        }
+        @keyframes myanimation {
+        0%{
+            background:orange;
+            width:0px;
+            height:0px;
+            border-radius:10px;
+            
+        }
+        20%{
+            background:yellow;
+            width:20px;
+            height:20px;
+            border-radius:20px;
+        }
+        40%{
+            background:red;
+            width:40px;
+            height:40px;
+            border-radius:30px;
+        }
+        60%{
+            background:rgb(251, 0, 255);
+            width:60px;
+            height:60px;
+            border-radius:40px;
+        }
+    }
+    .h1{
+        background-color: bisque;
+        width:20px;
+        height:20px;
+        border-radius: 40px;
+        transition: 2.s ease;
+        transition-duration: 10s;
+        margin: 20px 20px 20px 20px;
+    }
+    h1.hover{
+        background-color: rgba(0, 0, 255, 0.55);
+        
+    }
+   </style>
+ </head>
+<body>
+    <div>Animation</div>
+</body>
+<div class="h1">Shivani</div>
+
+</html>
